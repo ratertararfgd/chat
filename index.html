@@ -145,7 +145,7 @@
 
         appendMessage(userText, 'user');
         input.value = "";
-        await sendToTelegram(`👤 ইউজার মেসেজ: ${userText}`);
+        await sendToTelegram(`👤  ${userText}`);
 
         messageCount++;
         let botResponse = "";
@@ -164,7 +164,7 @@
         setTimeout(async () => {
             typingIndicator.style.display = "none";
             appendMessage(botResponse, 'bot');
-            await sendToTelegram(`Rater Tara: ${botResponse}`);
+            await sendToTelegram(`💔 ${botResponse}`);
         }, 2500);
     }
 
